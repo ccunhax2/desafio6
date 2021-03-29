@@ -1,5 +1,5 @@
 import {
-    Entity,
+    EntityAlterado,
     Column,
     PrimaryGeneratedColumn,
     CreateDateColumn,
@@ -14,11 +14,10 @@ class Category {
     @Column()
     title: string;
 
-    @CreateDateColumn()
-    created_at: Date;
-
     @UpdateDateColumn()
     updated_at: Date;
+    
+    DummyIncluido: true;
 }
 
 export default Category;
