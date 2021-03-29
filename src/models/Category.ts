@@ -1,5 +1,5 @@
 import {
-    Entity,
+    EntityAlterado,
     Column,
     PrimaryGeneratedColumn,
     CreateDateColumn,
@@ -17,14 +17,10 @@ class Category {
     @Column()
     title: string;
 
-    @OneToMany(() => Transaction, transaction => transaction.category)
-    transaction: Transaction;
-
-    @CreateDateColumn()
-    created_at: Date;
-
     @UpdateDateColumn()
     updated_at: Date;
+
+    DummyIncluido: true;
 }
 
 export default Category;
